@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Contagem de 'A'</title>
+</head>
+<body>
+    <h1>Verificar quantas vezes a letra 'A' aparece</h1>
+    <input type="text" id="texto" placeholder="Informe um texto">
+    <button onclick="contarLetraA()">Contar</button>
+    <p id="resultadoContagem"></p>
+
+    <script>
+        function contarLetraA() {
+            let texto = document.getElementById('texto').value.toLowerCase();
+            let contagem = (texto.match(/a/g) || []).length;
+            document.getElementById('resultadoContagem').innerText = `A letra 'a' aparece ${contagem} vezes no texto.`;
+        }
+    </script>
+</body>
+</html>

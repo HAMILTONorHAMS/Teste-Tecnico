@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completar Sequências</title>
+    <style>
+        body {
+            background-color: #1c1f4b; 
+            color: white; 
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #f0f0f0; 
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #f39c12; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #d35400; 
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-weight: bold;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <h1>Completar o próximo elemento das sequências</h1>
+    <ul>
+        <li>1, 3, 5, 7, <span id="sequenciaA">___</span></li>
+        <li>2, 4, 8, 16, 32, 64, <span id="sequenciaB">____</span></li>
+        <li>0, 1, 4, 9, 16, 25, 36, <span id="sequenciaC">____</span></li>
+        <li>4, 16, 36, 64, <span id="sequenciaD">____</span></li>
+        <li>1, 1, 2, 3, 5, 8, <span id="sequenciaE">____</span></li>
+        <li>2, 10, 12, 16, 17, 18, 19, <span id="sequenciaF">____</span></li>
+    </ul>
+    <button onclick="completarSequencias()">Completar</button>
+
+    <script>
+        function completarSequencias() {
+            document.getElementById('sequenciaA').innerText = '9';  // Lógica de números ímpares
+            document.getElementById('sequenciaB').innerText = '128';  // Multiplicação por 2
+            document.getElementById('sequenciaC').innerText = '49';  // Quadrados perfeitos
+            document.getElementById('sequenciaD').innerText = '100';  // Quadrados de números pares
+            document.getElementById('sequenciaE').innerText = '13';  // Fibonacci
+            document.getElementById('sequenciaF').innerText = '20';  // Mistura de números pares e primos
+        }
+    </script>
+</body>
+</html>

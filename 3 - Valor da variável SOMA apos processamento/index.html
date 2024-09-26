@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Valor de SOMA</title>
+</head>
+<body>
+    <h1>Valor final da variável SOMA</h1>
+    <button onclick="calcularSoma()">Calcular</button>
+    <p id="resultadoSoma"></p>
+
+    <script>
+        function calcularSoma() {
+            let INDICE = 12, SOMA = 0, K = 1;
+            while (K < INDICE) {
+                K = K + 1;
+                SOMA = SOMA + K;
+            }
+            document.getElementById('resultadoSoma').innerText = `O valor final de SOMA é ${SOMA}.`;
+        }
+    </script>
+</body>
+</html>

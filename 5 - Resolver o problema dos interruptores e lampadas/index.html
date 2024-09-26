@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Interruptores e Lâmpadas</title>
+</head>
+<body>
+    <h1>Resolver o problema dos interruptores e lâmpadas</h1>
+    <button onclick="resolverProblema()">Como Resolver?</button>
+    <p id="resultadoInterruptores"></p>
+
+    <script>
+        function resolverProblema() {
+            let solucao = `
+            1. Ligue o primeiro interruptor e deixe ligado por alguns minutos.<br>
+            2. Desligue o primeiro interruptor e ligue o segundo.<br>
+            3. Vá até a sala das lâmpadas.<br><br>
+                Resultados:<br>
+            - A lâmpada acesa está ligada ao segundo interruptor.<br>
+            - A lâmpada apagada, mas ainda quente, está ligada ao primeiro interruptor.<br>
+            - A lâmpada apagada e fria está ligada ao terceiro interruptor.
+            `;
+            document.getElementById('resultadoInterruptores').innerHTML = solucao;
+        }
+    </script>
+</body>
+</html>
